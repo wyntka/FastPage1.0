@@ -1,1 +1,7 @@
-# FastPage1.0
+#######################
+
+ Simple Minecraft Page
+
+########################
+
+Thanks for download! ;?
