@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Example || Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik&display=swap" rel="stylesheet">
+    <style>
+      html{
+
+/*background-image: url('https://media.discordapp.net/attachments/881121568560939038/900042122269454426/SPOILER_2021-10-19_17.25.15.png');*/
+
+font-family: 'Poppins', sans-serif;
+}
+.ti-main{
+box-sizing: border-box;
+}
+
+.ti-bottom{
+padding: 20px;
+color: rgb(0, 0, 0);
+margin-left: -9px;
+margin-right: -5px;
+margin-bottom: -10px;
+left: 0;
+right: 0;
+background-color: rgb(255, 255, 255);
+}
+.ti-second{
+  margin-top: 130px;
+
+  left: 0;
+  right: 0;
+}
+
+.dialog{
+padding-top: 400px;
+}
+
+
+/*SPLIT*/
+
+.dashboard-alt{
+position: absolute;
+display: contents;
+font-size: 60px;
+
+font-family: 'Luckiest Guy', cursive;
+color: white;
+text-transform: uppercase;
+font-weight: 900;
+background: rgba(0, 0, 0, 0.568);
+}
+.custom-shape-divider-bottom-1630253083 {
+position: absolute;
+top: 0;
+left: 0;
+margin-top: 950px;
+width: 100%;
+overflow: hidden;
+line-height: 0;
+}
+
+.custom-shape-divider-bottom-1630253083 svg {
+position: relative;
+display: block;
+width: calc(100% + 1.3px);
+height: 138px;
+}
+
+.custom-shape-divider-bottom-1630253083 .shape-fill {
+fill: rgb(255, 255, 255);
+}
+/*NAVBAR*/
+
+#navbar {
+overflow: hidden;
+background-color: white;
+padding-left: 250px;
+padding-right: 250px;
+
+color: black;
+padding-top: 15px;
+font-family: 'Montserrat', sans-serif;
+padding-bottom: 15px;
+left: 0;
+right: 0;
+transition: 0.4s;
+position: fixed;
+box-shadow: 0px 0px 32px -19px rgba(66, 68, 90, 1);
+width: 100%;
+top: 0;
+z-index: 99999;
+}
+
+#navbar a {
+float: left;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 18px; 
+line-height: 25px;
+border-radius: 4px;
+}
+
+
+
+#navbar #logo {
+font-size: 35px;
+font-weight: 700;
+color: white;
+transition: 0.4s;
+}
+
+#navbar-right {
+float: right;
+margin-right: 500px;
+
+}
+
+@media screen and (max-width: 580px) {
+#navbar {
+  padding: 20px 10px !important;
+}
+#navbar a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+#navbar-right {
+  float: none;
+}
+}
+
+
+.pointer{cursor: pointer;}
+.btn-box{background-color: rgb(22, 104, 255); color: white; padding: 10px; border-radius: 5px; font-family: 'Inter', sans-serif; transition: 0.3s;}
+.btn-box:hover{background-color: rgb(0, 71, 202); transition: 0.3s;}
+.padding-box-btn{padding-top: -5px; padding-bottom: -5px;}
+.id-padding{padding-left: 3px; padding-right: 3px;}
+.h_title{font-size: 25px; color: black;}
+.span-left{margin-left: -5px;}
+.cn-container{padding-left: 250px;padding-right: 250px;}
+.cn-header{display: inline-flex; width: 100%; margin-top: 150px;}
+.cn-cna{width: 45%; text-align: right; padding-right: 30px; padding-top: 50px;}
+.cn-cnb{width: 55%; text-align: left; padding-left: 30px;}
+.mn-lex{margin-top: 25px;}
+.larger{padding-right: 20px; padding-left: 20px;}
+.f-small{font-size: 20px;line-height: 1.2em;font-family: 'Inter', sans-serif; color: rgb(46, 87, 168); text-transform: uppercase; margin-bottom: -20px;}
+.f-big{font-size: 70px;line-height: 1.2em;font-family: 'Inter', sans-serif; color: rgb(0, 39, 117);}
+.f-txt{color: rgb(138, 138, 138);margin-top: 30px; width: 71%;}
+::-webkit-scrollbar {width: 10px;background-color: #d6d6d6;}
+::-webkit-scrollbar-thumb {background: #2a74ff;}
+::-webkit-scrollbar-thumb:hover {background: #0059ff;}
+::-webkit-scrollbar-thumb:window-inactive {background: rgb(255, 255, 255);}
+.cn-body{margin-top: 400px;}
+.cn-sep{border-bottom: 2px #c7c7c7 solid; width: 30%; padding-bottom: 20px;}
+.adm-list{display: inline-flex; margin-top: 50px;}
+.item box-content{margin-left: 20px; margin-right: 20px;}
+.group--wlasciciel{    text-shadow: 1px 1px 15px #ff0000;font-weight: bold;color: #c40000;font-family: 'Inter', sans-serif;}
+.group--administrator{   font-weight: bold;color: #e60000;font-family: 'Inter', sans-serif;}
+.group--moderator{   font-weight: bold;color: #46aa31;font-family: 'Inter', sans-serif;}
+.group--helper{   font-weight: bold;color: #00ffea;font-family: 'Inter', sans-serif;}
+.group--cm--bd{ font-weight: bold;color: #ffd900;font-family: 'Inter', sans-serif;}
+.nickname{font-family: 'Inter', sans-serif;font-weight: bold;}
+.box-content{transition: 0.4s;box-shadow: 0px 0px 29px -19px rgba(66, 68, 90, 1); background-color: white; border-radius: 5px; padding: 20px; margin-top: 30px; text-align: left; margin-left: 10px; margin-right: 10px;}
+.box-content>.alt{color: rgb(177, 177, 177);}
+.box-content>.bit{margin-left: 30px; color: rgb(107, 107, 107); }
+.item>div{margin-top: 20px; text-align: center;transition: 0.4s;}
+.item{transition: 0.4s; transition-delay: 0.4s;}
+html{overflow-x: hidden; scroll-behavior: smooth;transition: 0.4s;}
+.ftn{box-shadow: 0px 0px 29px -19px rgba(66, 68, 90, 1); background-color: white; padding-top: 30px; margin-top: 150px; width: 100%; padding-left: -250px;padding-right: -250px; position: sticky;}
+.a{text-decoration: none; color: white;}
+.footer-end{padding-top: 30px;padding-bottom: 30px; padding-left: 250px;padding-right: 250px; background-color: white; box-shadow: 0px 0px 29px -19px rgba(66, 68, 90, 1); margin-top: 100px; margin-bottom: -20px; margin-left: -20px; margin-right: -20px; width: 100%;}
+#scroll-to-top{
+   position:fixed;
+   bottom:15px;
+   right:20px;
+   z-index: 99999;
+   opacity:0.8;
+   background-color: rgb(22, 104, 255); color: white; padding: 10px; border-radius: 5px; font-family: 'Inter', sans-serif; 
+}
+#scroll-to-top:hover{
+   opacity:1;
+}    
+    .navbar-right-mobile{display: none;}
+
+@media screen and (max-width: 1200px){
+  html{
+
+/*background-image: url('https://media.discordapp.net/attachments/881121568560939038/900042122269454426/SPOILER_2021-10-19_17.25.15.png');*/
+
+font-family: 'Poppins', sans-serif;
+}
+.ti-main{
+box-sizing: border-box;
+}
+
+.ti-bottom{
+padding: 20px;
+color: rgb(0, 0, 0);
+margin-left: -9px;
+margin-right: -5px;
+margin-bottom: -10px;
+left: 0;
+right: 0;
+background-color: rgb(255, 255, 255);
+}
+.ti-second{
+  margin-top: 130px;
+
+  left: 0;
+  right: 0;
+}
+
+.dialog{
+padding-top: 400px;
+}
+
+
+/*SPLIT*/
+
+.dashboard-alt{
+position: absolute;
+display: contents;
+font-size: 60px;
+
+font-family: 'Luckiest Guy', cursive;
+color: white;
+text-transform: uppercase;
+font-weight: 900;
+background: rgba(0, 0, 0, 0.568);
+}
+.custom-shape-divider-bottom-1630253083 {
+position: absolute;
+top: 0;
+left: 0;
+margin-top: 950px;
+width: 100%;
+overflow: hidden;
+line-height: 0;
+}
+
+.custom-shape-divider-bottom-1630253083 svg {
+position: relative;
+display: block;
+width: calc(100% + 1.3px);
+height: 138px;
+}
+
+.custom-shape-divider-bottom-1630253083 .shape-fill {
+fill: rgb(255, 255, 255);
+}
+/*NAVBAR*/
+
+#navbar {
+overflow: hidden;
+background-color: white;
+padding-left: 250px;
+padding-right: 250px;
+
+color: black;
+padding-top: 15px;
+font-family: 'Montserrat', sans-serif;
+padding-bottom: 15px;
+left: 0;
+right: 0;
+transition: 0.4s;
+position: fixed;
+box-shadow: 0px 0px 32px -19px rgba(66, 68, 90, 1);
+width: 100%;
+top: 0;
+z-index: 99999;
+}
+
+#navbar a {
+float: left;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 18px; 
+line-height: 25px;
+border-radius: 4px;
+}
+
+
+
+#navbar #logo {
+font-size: 35px;
+font-weight: 700;
+color: white;
+transition: 0.4s;
+}
+
+#navbar-right {
+float: right;
+display: none;
+margin-right: 500px;
+
+}
+.navbar-right-mobile{
+  float: right;
+  display: table;
+  margin-top: -50px;
+  margin-right: 20px;
+}
+
+
+@media screen and (max-width: 580px) {
+#navbar {
+  padding: 20px 10px !important;
+}
+#navbar a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+#navbar-right {
+  float: none;
+}
+}
+
+
+.pointer{cursor: pointer;}
+.btn-box{background-color: rgb(22, 104, 255); color: white; padding: 10px; border-radius: 5px; font-family: 'Inter', sans-serif; transition: 0.3s;}
+.btn-box:hover{background-color: rgb(0, 71, 202); transition: 0.3s;}
+.padding-box-btn{padding-top: -5px; padding-bottom: -5px;}
+.id-padding{padding-left: 3px; padding-right: 3px;}
+.h_title{font-size: 25px; color: black;}
+.span-left{margin-left: -5px;}
+.cn-container{padding-left: 0px;padding-right: 10px;}
+.cn-header{display: block; width: 100%; margin-top: 0px;}
+.cn-cna{width: 100%; text-align: left; padding-right: 10px; padding-top: 50px;}
+.cn-cnb{width:100%; text-align: left; padding-left: 10px;}
+.mn-lex{margin-top: 25px;}
+.larger{padding-right: 20px; padding-left: 20px;}
+.f-small{font-size: 20px;line-height: 1.2em;font-family: 'Inter', sans-serif; color: rgb(46, 87, 168); text-transform: uppercase; margin-bottom: -20px;}
+.f-big{font-size: 40px;line-height: 1.2em;font-family: 'Inter', sans-serif; color: rgb(0, 39, 117);}
+.f-txt{color: rgb(138, 138, 138);margin-top: 30px; width: 100%;}
+::-webkit-scrollbar {width: 10px;background-color: #d6d6d6;}
+::-webkit-scrollbar-thumb {background: #2a74ff;}
+::-webkit-scrollbar-thumb:hover {background: #0059ff;}
+::-webkit-scrollbar-thumb:window-inactive {background: rgb(255, 255, 255);}
+.cn-body{margin-top: 200px;}
+.cn-sep{border-bottom: 2px #c7c7c7 solid; width: 100%; padding-bottom: 20px;}
+.adm-list{display: block; margin-top: 50px;}
+.item box-content{margin-left: 20px; margin-right: 20px;}
+.group--wlasciciel{    text-shadow: 1px 1px 15px #ff0000;font-weight: bold;color: #c40000;font-family: 'Inter', sans-serif;}
+.group--administrator{   font-weight: bold;color: #e60000;font-family: 'Inter', sans-serif;}
+.group--moderator{   font-weight: bold;color: #46aa31;font-family: 'Inter', sans-serif;}
+.group--helper{   font-weight: bold;color: #00ffea;font-family: 'Inter', sans-serif;}
+.group--cm--bd{ font-weight: bold;color: #ffd900;font-family: 'Inter', sans-serif;}
+.nickname{font-family: 'Inter', sans-serif;font-weight: bold;}
+.box-content{transition: 0.4s;box-shadow: 0px 0px 29px -19px rgba(66, 68, 90, 1); background-color: white; border-radius: 5px; padding: 20px; margin-top: 30px; text-align: left; margin-left: 10px; margin-right: 10px;}
+.box-content>.alt{color: rgb(177, 177, 177);}
+.box-content>.bit{margin-left: 30px; color: rgb(107, 107, 107); }
+.item>div{margin-top: 20px; text-align: center;transition: 0.4s;}
+.item{transition: 0.4s; transition-delay: 0.4s;}
+html{overflow-x: hidden; scroll-behavior: smooth;transition: 0.4s;}
+.ftn{box-shadow: 0px 0px 29px -19px rgba(66, 68, 90, 1); background-color: white; padding-top: 30px; margin-top: 150px; width: 100%; padding-left: -250px;padding-right: -250px; position: sticky;}
+.a{text-decoration: none; color: white;}
+.footer-end{padding-top: 30px;padding-bottom: 30px; padding-left: 20px;padding-right:20px; width: 100%; background-color: white; box-shadow: 0px 0px 29px -19px rgba(66, 68, 90, 1); margin-top: 100px; margin-bottom: -20px; margin-left: -20px; margin-right: -20px; width: 100%;}
+#scroll-to-top{
+   position:fixed;
+   bottom:15px;
+   right:20px;
+   z-index: 99999;
+   opacity:0.8;
+   background-color: rgb(22, 104, 255); color: white; padding: 10px; border-radius: 5px; font-family: 'Inter', sans-serif; 
+}
+#scroll-to-top:hover{
+   opacity:1;
+}    
+    
+}
+    </style>
+</head>
+<body>
+  <a href="#" title="Do góry!" class="at" id="scroll-to-top"><i class="bi bi-arrow-up"></i></a>
+  <script>
+   $(function(){
+    var stt_is_shown = false;
+    $(window).scroll(function(){
+       var win_height = 300;
+       var scroll_top = $(document).scrollTop(); 
+       if (scroll_top > win_height && !stt_is_shown) {
+          stt_is_shown = true;
+          $("#scroll-to-top").fadeIn();
+       } else if (scroll_top < win_height && stt_is_shown) {
+          stt_is_shown = false;
+          $("#scroll-to-top").fadeOut();
+       }
+   });
+   $("#scroll-to-top").click(function(e){
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, 100);
+    });
+ });
+  </script>
+    <div class="ti-main">
+        <div class="ti-first">
+            <div class="ti-header">
+                <div class="ti-nav">
+                    <div id="navbar">
+                        <a href="main.html" id="logo">
+                          <span class="h_title" id="link_blank0">
+                            YourServer
+                          </span>
+                        </a>
+                        <div id="navbar-right">
+                          <a class="link_blank pointer" id="link_blank" href="#" style="color: black;">Shop</a>
+                          <a class="link_blank2 pointer" id="link_blank2" href="#" style="color: black;">Abouse</a>
+                          <a class="link_blank3 pointer" id="link_blank3" href="#" style="color: black;"> Contact</a>
+      
+                            
+                            
+                            <a class="link_blank3 pointer span-left" id="link_blank3 " href="#"> 
+                              <span class="btn-box">
+                                Social
+                              </span>
+                          </a>
+                            <a class="link_blank3 pointer span-left" id="link_blank3"> 
+                              <span class="btn-box">
+                                <i class="bi bi-cart id-padding"></i>
+                              </span>
+                          </a>
+                        
+                        </div>
+                        <div class="navbar-right-mobile">
+                          <a class="link_blank3 pointer span-left" id="link_blank3"> 
+                            <span class="btn-box">
+                              <i class="bi bi-cart id-padding"></i>
+                            </span>
+                        </a>
+                        </div>
+                      </div>
+                      
+                </div>
+            </div>
+
+            <div class="ti-second">
+
+                <div class="ti-bottom">
+                  <div class="cn-container">
+                    <div class="cn-header">
+                      <div class="cn-cna animate__animated animate__fadeInDown">
+                      <img src="https://clipart-best.com/img/minecraft/minecraft-clip-art-44.png">
+                      </div>
+                      <div class="cn-cnb animate__animated animate__fadeInUp">
+                        <div class="h_title mn-lex f-small">
+                          epsum librum.
+                      </div>
+                        <div class="h_title mn-lex f-big">
+                                                  YourServer
+                        </div>
+                        <div class="f-txt">
+                          <p>Verdum loren du verdi nu a rid nerr</p>
+                          <br><br>
+                          </span>
+                          <span class="btn-box pointer larger a" style="margin-left: 10px;" id="FastHc.pl">
+                            <a class="a" href="#">
+Social
+                            </a>
+                           
+                          </span>
+                        </div>
+
+                      </div>
+                      
+                    </div>
+
+
+                      </center>
+                    </div>
+                  </div>
+            
+            <script>
+                // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+                    document.getElementById("navbar").style.background = "white";
+                    document.getElementById("link_blank").style.color = "black";
+                    document.getElementById("link_blank2").style.color = "black";
+                    document.getElementById("link_blank3").style.color = "black";
+                    document.getElementById("link_blank0").style.color = "black";
+                    document.getElementById("navbar").style.boxShadow = "0px 0px 32px -19px rgba(66, 68, 90, 1)";
+                  } else {
+                    document.getElementById("link_blank").style.color = "white";
+                    document.getElementById("link_blank2").style.color = "white";
+                    document.getElementById("link_blank0").style.color = "white";
+                    document.getElementById("link_blank3").style.color = "white";
+                    document.getElementById("navbar").style.background = "transparent";
+                    document.getElementById("navbar").style.boxShadow = "none";
+                  }
+                }
+                </script>
+        </div>
+    </div>
+</body>
+</html>
